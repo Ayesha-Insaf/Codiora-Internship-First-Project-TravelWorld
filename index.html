@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover amazing travel destinations around the world.">
+    <meta name="author" content="TravelWorld">
+    <title>TravelWorld - Discover Your Next Dream Destination</title>
+    <link rel="icon" type="image/x-icon" href="images/hero-bg.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-icon"><i class="fa-solid fa-plane-departure"></i></div>
+            <div class="preloader-text">Travel<span>World</span></div>
+            <div class="preloader-bar"><div class="preloader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION BAR -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#home" class="logo">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <span>Travel<span class="logo-highlight">World</span></span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#destinations" class="nav-link">Destinations</a></li>
+                    <li class="nav-item"><a href="#categories" class="nav-link">Categories</a></li>
+                    <li class="nav-item"><a href="#featured" class="nav-link">Featured</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-container">
+                <div class="hero-content" data-animate="fade-up">
+                    <p class="hero-tagline">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Explore the World with Us
+                    </p>
+                    <h1 class="hero-title">
+                        Discover Your Next <br>
+                        <span class="hero-highlight">Dream Destination</span>
+                    </h1>
+                    <p class="hero-description">
+                        Explore the world's most beautiful places and create memories that last a lifetime.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#destinations" class="btn btn-primary">
+                            Explore Destinations <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#about" class="btn btn-secondary">
+                            <i class="fa-solid fa-play"></i> Learn More
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3 class="stat-number">500+</h3>
+                            <p class="stat-label">Destinations</p>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">10K+</h3>
+                            <p class="stat-label">Happy Travelers</p>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">4.9<i class="fa-solid fa-star"></i></h3>
+                            <p class="stat-label">User Rating</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEGORIES SECTION -->
+        <section id="categories" class="categories">
+            <div class="container">
+                <div class="section-header" data-animate="fade-up">
+                    <span class="section-tag">Explore by Type</span>
+                    <h2 class="section-title">Travel <span class="title-highlight">Categories</span></h2>
+                    <p class="section-description">Choose your travel style and discover destinations that match your dreams.</p>
+                </div>
+                <div class="categories-grid">
+                    <div class="category-card" data-category="beach" data-animate="fade-up">
+                        <div class="category-icon beach-icon"><i class="fa-solid fa-umbrella-beach"></i></div>
+                        <h3 class="category-title">Beaches</h3>
+                        <p class="category-count">15+ Destinations</p>
+                    </div>
+                    <div class="category-card" data-category="mountains" data-animate="fade-up">
+                        <div class="category-icon mountain-icon"><i class="fa-solid fa-mountain"></i></div>
+                        <h3 class="category-title">Mountains</h3>
+                        <p class="category-count">20+ Destinations</p>
+                    </div>
+                    <div class="category-card" data-category="historical" data-animate="fade-up">
+                        <div class="category-icon historical-icon"><i class="fa-solid fa-landmark"></i></div>
+                        <h3 class="category-title">Historical</h3>
+                        <p class="category-count">25+ Destinations</p>
+                    </div>
+                    <div class="category-card" data-category="adventure" data-animate="fade-up">
+                        <div class="category-icon adventure-icon"><i class="fa-solid fa-person-hiking"></i></div>
+                        <h3 class="category-title">Adventure</h3>
+                        <p class="category-count">18+ Destinations</p>
+                    </div>
+                    <div class="category-card" data-category="cultural" data-animate="fade-up">
+                        <div class="category-icon cultural-icon"><i class="fa-solid fa-masks-theater"></i></div>
+                        <h3 class="category-title">Cultural</h3>
+                        <p class="category-count">22+ Destinations</p>
+                    </div>
+                    <div class="category-card" data-category="nature" data-animate="fade-up">
+                        <div class="category-icon nature-icon"><i class="fa-solid fa-tree"></i></div>
+                        <h3 class="category-title">Nature</h3>
+                        <p class="category-count">30+ Destinations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESTINATIONS SECTION -->
+        <section id="destinations" class="destinations">
+            <div class="container">
+                <div class="section-header" data-animate="fade-up">
+                    <span class="section-tag">Popular Places</span>
+                    <h2 class="section-title">Top <span class="title-highlight">Destinations</span></h2>
+                    <p class="section-description">Explore our handpicked selection of the world's most stunning destinations.</p>
+                </div>
+
+                <div class="search-filter-wrapper">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" id="searchInput" class="search-input" placeholder="Search destinations, countries...">
+                    </div>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="beach">Beach</button>
+                        <button class="filter-btn" data-filter="mountains">Mountains</button>
+                        <button class="filter-btn" data-filter="historical">Historical</button>
+                        <button class="filter-btn" data-filter="adventure">Adventure</button>
+                        <button class="filter-btn" data-filter="cultural">Cultural</button>
+                        <button class="filter-btn" data-filter="nature">Nature</button>
+                    </div>
+                </div>
+
+                <div class="destinations-grid" id="destinationsGrid">
+                    <div class="destination-card" data-category="beach" data-name="phi phi thailand islands beach" data-animate="fade-up">
+                        <div class="card-image">
+                            <img src="images/dest-phiphi.jpg" alt="Phi Phi Islands">
+                            <span class="card-badge beach-badge">Beach</span>
+                            <div class="card-rating"><i class="fa-solid fa-star"></i><span>4.8</span></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-location"><i class="fa-solid fa-location-dot"></i><span>Thailand</span></div>
+                            <h3 class="card-title">Phi Phi Islands</h3>
+                            <p class="card-description">Crystal clear turquoise waters and dramatic limestone cliffs.</p>
+                            <div class="card-footer">
+                                <span class="card-price">From <strong>$450</strong></span>
+                                <button class="card-btn">Explore <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-category="cultural" data-name="dubai uae emirates cultural" data-animate="fade-up">
+                        <div class="card-image">
+                            <img src="images/dest-dubai.jpg" alt="Dubai">
+                            <span class="card-badge cultural-badge">Cultural</span>
+                            <div class="card-rating"><i class="fa-solid fa-star"></i><span>4.9</span></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-location"><i class="fa-solid fa-location-dot"></i><span>UAE</span></div>
+                            <h3 class="card-title">Dubai</h3>
+                            <p class="card-description">Futuristic skyscrapers, luxury shopping, and desert adventures.</p>
+                            <div class="card-footer">
+                                <span class="card-price">From <strong>$780</strong></span>
+                                <button class="card-btn">Explore <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-category="adventure" data-name="cappadocia turkey adventure balloon" data-animate="fade-up">
+                        <div class="card-image">
+                            <img src="images/dest-cappadocia.jpg" alt="Cappadocia">
+                            <span class="card-badge adventure-badge">Adventure</span>
+                            <div class="card-rating"><i class="fa-solid fa-star"></i><span>4.9</span></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-location"><i class="fa-solid fa-location-dot"></i><span>Turkey</span></div>
+                            <h3 class="card-title">Cappadocia</h3>
+                            <p class="card-description">Hot air balloons floating over surreal fairy chimneys at sunrise.</p>
+                            <div class="card-footer">
+                                <span class="card-price">From <strong>$620</strong></span>
+                                <button class="card-btn">Explore <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-category="cultural" data-name="lahore pakistan cultural badshahi" data-animate="fade-up">
+                        <div class="card-image">
+                            <img src="images/dest-lahore.jpg" alt="Lahore">
+                            <span class="card-badge cultural-badge">Cultural</span>
+                            <div class="card-rating"><i class="fa-solid fa-star"></i><span>4.7</span></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-location"><i class="fa-solid fa-location-dot"></i><span>Pakistan</span></div>
+                            <h3 class="card-title">Lahore</h3>
+                            <p class="card-description">Magnificent Mughal heritage — royal mosques and ancient forts.</p>
+                            <div class="card-footer">
+                                <span class="card-price">From <strong>$380</strong></span>
+                                <button class="card-btn">Explore <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-category="historical" data-name="rome italy colosseum historical" data-animate="fade-up">
+                        <div class="card-image">
+                            <img src="images/dest-rome.jpg" alt="Rome">
+                            <span class="card-badge historical-badge">Historical</span>
+                            <div class="card-rating"><i class="fa-solid fa-star"></i><span>4.8</span></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-location"><i class="fa-solid fa-location-dot"></i><span>Italy</span></div>
+                            <h3 class="card-title">Rome</h3>
+                            <p class="card-description">The iconic ancient amphitheater — 2,000 years of history.</p>
+                            <div class="card-footer">
+                                <span class="card-price">From <strong>$550</strong></span>
+                                <button class="card-btn">Explore <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-category="historical" data-name="taj mahal india historical agra" data-animate="fade-up">
+                        <div class="card-image">
+                            <img src="images/dest-taj.jpg" alt="Taj Mahal">
+                            <span class="card-badge historical-badge">Historical</span>
+                            <div class="card-rating"><i class="fa-solid fa-star"></i><span>4.9</span></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-location"><i class="fa-solid fa-location-dot"></i><span>India</span></div>
+                            <h3 class="card-title">Taj Mahal</h3>
+                            <p class="card-description">The white marble monument of eternal love — India's crown jewel.</p>
+                            <div class="card-footer">
+                                <span class="card-price">From <strong>$420</strong></span>
+                                <button class="card-btn">Explore <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-category="mountains" data-name="mountains alps peaks landscape" data-animate="fade-up">
+                        <div class="card-image">
+                            <img src="images/dest-mountains.jpg" alt="Mountains">
+                            <span class="card-badge mountains-badge">Mountains</span>
+                            <div class="card-rating"><i class="fa-solid fa-star"></i><span>4.8</span></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-location"><i class="fa-solid fa-location-dot"></i><span>Alps</span></div>
+                            <h3 class="card-title">Mountain Peaks</h3>
+                            <p class="card-description">Majestic snow-capped peaks and breathtaking trails.</p>
+                            <div class="card-footer">
+                                <span class="card-price">From <strong>$680</strong></span>
+                                <button class="card-btn">Explore <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-category="nature" data-name="amazon brazil rainforest nature wildlife" data-animate="fade-up">
+                        <div class="card-image">
+                            <img src="images/dest-amazon.jpg" alt="Amazon Rainforest">
+                            <span class="card-badge nature-badge">Nature</span>
+                            <div class="card-rating"><i class="fa-solid fa-star"></i><span>4.7</span></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-location"><i class="fa-solid fa-location-dot"></i><span>Brazil</span></div>
+                            <h3 class="card-title">Amazon Rainforest</h3>
+                            <p class="card-description">The lungs of the Earth — world's largest rainforest.</p>
+                            <div class="card-footer">
+                                <span class="card-price">From <strong>$890</strong></span>
+                                <button class="card-btn">Explore <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="no-results" id="noResults">
+                    <i class="fa-solid fa-face-frown"></i>
+                    <h3>No destinations found</h3>
+                    <p>Try a different search or filter</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED DESTINATIONS -->
+        <section id="featured" class="featured">
+            <div class="container">
+                <div class="section-header" data-animate="fade-up">
+                    <span class="section-tag">Handpicked for You</span>
+                    <h2 class="section-title">Featured <span class="title-highlight">Destinations</span></h2>
+                    <p class="section-description">Discover our specially curated destinations chosen by travel experts.</p>
+                </div>
+
+                <div class="featured-grid">
+                    <div class="featured-card featured-large" data-animate="fade-right">
+                        <img src="images/dest-cappadocia.jpg" alt="Cappadocia">
+                        <div class="featured-overlay"></div>
+                        <div class="featured-content">
+                            <span class="featured-badge trending"><i class="fa-solid fa-fire"></i> Trending</span>
+                            <div class="featured-info">
+                                <div class="featured-location"><i class="fa-solid fa-location-dot"></i><span>Turkey</span></div>
+                                <h3 class="featured-title">Cappadocia</h3>
+                                <p class="featured-description">Hot air balloons floating over surreal fairy chimneys at sunrise.</p>
+                                <div class="featured-meta">
+                                    <div class="featured-rating"><i class="fa-solid fa-star"></i><span>4.9</span></div>
+                                    <button class="featured-btn">Explore <i class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="featured-small-wrapper">
+                        <div class="featured-card featured-small" data-animate="fade-left">
+                            <img src="images/dest-amalfi.jpg" alt="Amalfi Coast">
+                            <div class="featured-overlay"></div>
+                            <div class="featured-content">
+                                <span class="featured-badge popular"><i class="fa-solid fa-heart"></i> Popular</span>
+                                <div class="featured-info">
+                                    <div class="featured-location"><i class="fa-solid fa-location-dot"></i><span>Italy</span></div>
+                                    <h3 class="featured-title">Amalfi Coast</h3>
+                                    <div class="featured-meta">
+                                        <div class="featured-rating"><i class="fa-solid fa-star"></i><span>4.8</span></div>
+                                        <button class="featured-btn">Explore</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="featured-card featured-small" data-animate="fade-left">
+                            <img src="images/dest-taj.jpg" alt="Taj Mahal">
+                            <div class="featured-overlay"></div>
+                            <div class="featured-content">
+                                <span class="featured-badge editors"><i class="fa-solid fa-award"></i> Editor's</span>
+                                <div class="featured-info">
+                                    <div class="featured-location"><i class="fa-solid fa-location-dot"></i><span>India</span></div>
+                                    <h3 class="featured-title">Taj Mahal</h3>
+                                    <div class="featured-meta">
+                                        <div class="featured-rating"><i class="fa-solid fa-star"></i><span>4.9</span></div>
+                                        <button class="featured-btn">Explore</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION - FIXED -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-wrapper">
+
+                    <!-- LEFT: Image -->
+                    <div class="about-image-wrapper" data-animate="fade-right">
+                        <div class="about-image-main">
+                            <img src="images/about-img.jpg" alt="About TravelWorld">
+                        </div>
+                        <div class="about-decoration"></div>
+                    </div>
+
+                    <!-- RIGHT: Content -->
+                    <div class="about-content" data-animate="fade-left">
+                        <span class="section-tag">About TravelWorld</span>
+                        <h2 class="section-title about-title">
+                            Your Journey Begins <br>
+                            With <span class="title-highlight">Us</span>
+                        </h2>
+                        <p class="about-description">
+                            We are passionate travel enthusiasts helping you discover breathtaking destinations worldwide.
+                        </p>
+
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fa-solid fa-tag"></i></div>
+                                <div class="feature-text">
+                                    <h4>Best Price</h4>
+                                    <p>Unbeatable prices</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                                <div class="feature-text">
+                                    <h4>24/7 Support</h4>
+                                    <p>Help anytime</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                                <div class="feature-text">
+                                    <h4>Safe Booking</h4>
+                                    <p>Secure payments</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fa-solid fa-medal"></i></div>
+                                <div class="feature-text">
+                                    <h4>Expert Guides</h4>
+                                    <p>Professional team</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-stats">
+                            <div class="about-stat-item"><h3>10<span>+</span></h3><p>Years</p></div>
+                            <div class="about-stat-item"><h3>500<span>+</span></h3><p>Destinations</p></div>
+                            <div class="about-stat-item"><h3>10K<span>+</span></h3><p>Travelers</p></div>
+                        </div>
+
+                        <a href="#destinations" class="btn btn-primary about-btn">
+                            Start Your Journey <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-main">
+                <div class="footer-column">
+                    <a href="#home" class="footer-logo">
+                        <i class="fa-solid fa-plane-departure"></i>
+                        <span>Travel<span class="logo-highlight">World</span></span>
+                    </a>
+                    <p class="footer-about">Your trusted travel companion for discovering breathtaking destinations.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#destinations"><i class="fa-solid fa-chevron-right"></i> Destinations</a></li>
+                        <li><a href="#categories"><i class="fa-solid fa-chevron-right"></i> Categories</a></li>
+                        <li><a href="#featured"><i class="fa-solid fa-chevron-right"></i> Featured</a></li>
+                        <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Popular Places</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Thailand</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Dubai</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Turkey</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Italy</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Pakistan</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fa-solid fa-location-dot"></i><span>123 Travel Street, World</span></li>
+                        <li><i class="fa-solid fa-phone"></i><span>+1 (555) 123-4567</span></li>
+                        <li><i class="fa-solid fa-envelope"></i><span>info@travelworld.com</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2026 <strong>TravelWorld</strong> </i> </p>
+                    <div class="payment-methods">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                        <i class="fa-brands fa-cc-amex"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-image">
+                <img src="" alt="" id="modalImage">
+                <span class="modal-badge" id="modalBadge">Beach</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-header">
+                    <div>
+                        <div class="modal-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span id="modalLocation">Location</span>
+                        </div>
+                        <h2 class="modal-title" id="modalTitle">Destination</h2>
+                    </div>
+                    <div class="modal-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span id="modalRating">4.8</span>
+                    </div>
+                </div>
+                <p class="modal-description" id="modalDescription">Description...</p>
+                <div class="modal-features">
+                    <div class="modal-feature">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <div><h4>Duration</h4><p>7-10 Days</p></div>
+                    </div>
+                    <div class="modal-feature">
+                        <i class="fa-solid fa-users"></i>
+                        <div><h4>Group</h4><p>2-15 People</p></div>
+                    </div>
+                    <div class="modal-feature">
+                        <i class="fa-solid fa-plane"></i>
+                        <div><h4>Includes</h4><p>Flights+Hotels</p></div>
+                    </div>
+                    <div class="modal-feature">
+                        <i class="fa-solid fa-utensils"></i>
+                        <div><h4>Meals</h4><p>Breakfast</p></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="modal-price">
+                        <span>Starting from</span>
+                        <h3 id="modalPrice">$450</h3>
+                    </div>
+                    <button class="modal-book-btn" id="modalBookBtn">
+                        <i class="fa-solid fa-plane-departure"></i> Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
