@@ -47,11 +47,4 @@ TravelWorld/
 
 TravelWorld is optimized for **desktop, tablet, and mobile devices**, with responsive layouts and a mobile hamburger menu.
 
-## 👩‍💻 Author
-
-**Ayesha Insaf**
-BS Computer Science Student | Web Developer
-
----
-
 ⭐ *A responsive travel website built with HTML, CSS, and JavaScript.*
